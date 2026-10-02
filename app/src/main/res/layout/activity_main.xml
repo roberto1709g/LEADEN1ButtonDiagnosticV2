@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="18dp">
+    <TextView android:id="@+id/title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="LEADEN1 - DIAGNÓSTICO DE BOTONES V2"
+        android:textSize="22sp" android:textStyle="bold" android:gravity="center"
+        android:paddingBottom="12dp"/>
+    <TextView android:id="@+id/status" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="INICIANDO..."
+        android:textSize="18sp" android:textStyle="bold" android:gravity="center"
+        android:padding="12dp"/>
+    <TextView android:id="@+id/lastEvent" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="ÚLTIMO EVENTO: —"
+        android:textSize="16sp" android:padding="10dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:background="#EEEEEE" android:padding="8dp">
+        <TextView android:id="@+id/history" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="HISTORIAL&#10;"
+            android:textSize="14sp" android:fontFamily="monospace"/>
+    </ScrollView>
+    <Button android:id="@+id/clearButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="LIMPIAR HISTORIAL"
+        android:layout_marginTop="12dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="V2: MediaSession en servicio Android"
+        android:gravity="center" android:textSize="12sp" android:paddingTop="8dp"/>
+</LinearLayout>
